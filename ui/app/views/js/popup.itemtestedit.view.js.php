@@ -448,7 +448,7 @@ jQuery(document).ready(function($) {
 		placeholder: <?= $data['show_prev'] ? json_encode(_('value')) : '""' ?>,
 		value: <?= json_encode($data['prev_value']) ?>,
 		monospace_font: false,
-		maxlength: 65535,
+		maxlength: 4294967295,
 		disabled: <?= $data['show_prev'] ? 'false' : 'true' ?>,
 		grow: 'auto',
 		rows: 0
