@@ -73,7 +73,7 @@ const ZBX_TABLE\ttables[] = {
 #	define ZBX_TYPE_SHORTTEXT_LEN	65535
 #endif
 
-#define ZBX_TYPE_LONGTEXT_LEN	0
+#define ZBX_TYPE_LONGTEXT_LEN	4294967295
 #define ZBX_TYPE_TEXT_LEN	65535
 
 ";
