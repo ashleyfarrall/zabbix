@@ -792,7 +792,7 @@ static void	zbx_load_config(int requirement, ZBX_TASK_EX *task)
 		{"HostInterfaceItem",		&CONFIG_HOST_INTERFACE_ITEM,		TYPE_STRING,
 			PARM_OPT,	0,			0},
 		{"BufferSize",			&CONFIG_BUFFER_SIZE,			TYPE_INT,
-			PARM_OPT,	2,			65535},
+			PARM_OPT,	2,			4294967295},
 		{"BufferSend",			&CONFIG_BUFFER_SEND,			TYPE_INT,
 			PARM_OPT,	1,			SEC_PER_HOUR},
 #ifndef _WINDOWS
