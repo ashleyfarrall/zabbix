@@ -1,0 +1,19 @@
+
+Severity
+Name
+Expression
+Status
+High
+Invalid user
+Problem: {Secure:log[/var/log/auth.log,"Failed password for",,,skip,,].count(300)}=1Recovery: {Secure:log[/var/log/auth.log,"Failed password for",,,skip,,].nodata(300)}=1
+Enabled
+
+High
+SU root detected
+Problem: {Secure:log[/var/log/auth.log,"to root",,,skip,,].count(300)}=1Recovery: {Secure:log[/var/log/auth.log,"to root",,,skip,,].nodata(300)}=1
+Enabled
+
+High
+Failed password
+Problem: {Secure:log[/var/log/auth.log,"Failed password for ([^\s]+) from (25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)",,,skip,,].count(300)}=1Recovery: {Secure:log[/var/log/auth.log,"Failed password for ([^\s]+) from (25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)",,,skip,,].nodata(300)}=1
+Enabled
