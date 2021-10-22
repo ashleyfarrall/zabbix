@@ -1,0 +1,51 @@
+Subfilter affects only filtered data
+
+
+Wizard
+Name
+Triggers
+Key
+Interval
+History
+Trends
+Type
+Applications
+Status
+Info
+
+
+Invalid user
+Triggers 1
+log[/var/log/auth.log,"Failed password for",,,skip,,]
+1s
+3600
+
+Zabbix agent (active)
+Log data
+Enabled
+
+
+
+Priv Esc
+Triggers 1
+log[/var/log/auth.log,"to root",,,skip,,]
+1s
+3600
+
+Zabbix agent (active)
+Log data
+Enabled
+
+
+
+SSH auth failed
+Triggers 1
+log[/var/log/auth.log,"Failed password for ([^\s]+) from (25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)",,,skip,,]
+1s
+3600
+
+Zabbix agent (active)
+Log data
+Enabled
+
+	
